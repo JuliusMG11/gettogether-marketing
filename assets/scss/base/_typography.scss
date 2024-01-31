@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: $color-text-white;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 72px;
+    color: $color-text-white;
+
+    @media (max-width: 1024px) {
+        font-size: 52px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 64px;
+    // color: $color-text-white;
+   //  outline: 1px solid $color-text-white;
+
+   @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+.outline-font {
+    h2 {
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $color-text-white;
+        font-weight: 900;
+        font-size: 52px;
+
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+}
+
+.outline-purple {
+    h2 {
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $color-primary;
+        font-weight: 900;
+        font-size: 52px;
+
+        @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+}
+
+p {
+    line-height: 26px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+a {
+    &:hover {
+        cursor: pointer;
+        color: $color-primary;
+    }
+}
